@@ -1,0 +1,54 @@
+server/
+├── config/
+│   └── db.js                 // MongoDB connection
+├── controllers/
+│   ├── authController.js
+│   ├── productController.js
+│   ├── requirementController.js
+│   └── adminController.js
+├── middleware/
+│   ├── auth.js              // JWT Auth middleware
+│   └── roleCheck.js         // Role-based access
+├── models/
+│   ├── User.js
+│   ├── Product.js
+│   └── Requirement.js
+├── routes/
+│   ├── authRoutes.js
+│   ├── productRoutes.js
+│   ├── requirementRoutes.js
+│   └── adminRoutes.js
+├── .env
+├── server.js                // Entry point
+└── package.json
+
+
+front-end
+client/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   └── ProductCard.jsx
+│   ├── pages/
+│   │   ├── user/
+│   │   │   ├── UserDashboard.jsx
+│   │   │   └── RequestForm.jsx
+│   │   ├── admin/
+│   │   │   ├── AdminDashboard.jsx
+│   │   │   └── ProductManager.jsx
+│   │   └── superadmin/
+│   │       └── SuperDashboard.jsx
+│   ├── context/
+│   │   └── AuthContext.js
+│   ├── routes/
+│   │   ├── PrivateRoute.jsx
+│   │   ├── AdminRoute.jsx
+│   │   └── SuperAdminRoute.jsx
+│   ├── App.jsx
+│   └── main.jsx
+├── tailwind.config.js
+└── package.json
+
+
+
